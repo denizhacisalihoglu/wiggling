@@ -1,0 +1,100 @@
+// Wiggling App Base Sass File
+@import url("https://use.typekit.net/kye8dai.css")
+@import url('https://fonts.googleapis.com/css?family=Caveat:400&subset=latin-ext')
+
+$main-color: #291755
+$accent-color: #fc69b9
+$secondary-color: #8f63bc
+$secondary-color-darker: #7649a5
+
+body
+    font-family: "montserrat", sans-serif
+
+body.home
+    &:before
+        width: 100%
+        height: 100vh
+        display: flex
+        content: ' '
+        background: url('../img/stripes.svg') no-repeat right
+        background-size: cover
+        background-origin: padding-box
+        position: absolute
+        z-index: -9
+        right: 30%
+        top: 0
+    &:after
+        width: 30%
+        height: 100vh
+        background: $main-color
+        display: block
+        position: absolute
+        content: ' '
+        right: 0
+        top: 0
+        z-index: -10
+
+.home
+    .row
+        height: 100vh
+
+.webapp-logo
+    min-width: 150px
+
+.jumbotron
+    background: none
+    h1
+        color: $main-color
+        font-weight: 700
+        line-height: 40px
+        font-family: "montserrat", sans-serif
+    h3
+        color: #fc69b9
+        font-family: "Caveat", cursive
+    p
+        font-size: 15px
+
+.unicorn
+    background: url('../img/unicorn.svg') no-repeat
+    width: 420px
+    height: 420px
+    display: block
+
+.btn-primary
+    border-radius: 30px
+    padding-left: 40px
+    padding-right: 40px
+    height: 50px
+    line-height: 36px
+    background-color: $secondary-color !important
+    font-size: 16px
+    border: none
+    outline: none !important
+    &:hover
+        background-color: $secondary-color-darker !important
+        
+
+.text-link
+    color: $secondary-color
+    text-decoration: none !important
+    &:hover
+        color: $secondary-color-darker
+
+.nav-item
+    .nav-link
+        font-family: "montserrat", sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 15px
+        color: $secondary-color
+        &:hover
+            color: $secondary-color-darker
+.nav-item.active
+    .nav-link
+        color: $accent-color
+.navbar-toggler
+    outline: none !important
+    img
+        display: block
+        width: 36px
+        height: 36px
