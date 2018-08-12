@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import logo from '../../logo.svg';
 import NavLink from '../navigation_link';
 
-export default class Navigation extends Component {
+class Navigation extends Component {
     state = {
     }
 
     render() {
+      const { pathname: path } = this.props.location
       return (
         <nav className="navbar navbar-expand-md fixed-top">
           <a className="navbar-brand" href="#">
@@ -17,7 +19,7 @@ export default class Navigation extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav mr-auto">
-              <NavLink href='/' name='Home' activeClassName="active" />
+              <NavLink href='/' name='Home' isActive={path === '/'} />
               <NavLink href='/about' name='About' />
               <NavLink href='/events' name='Events' />
               <NavLink href='/hello-event-host' name='Hello Event Host!' />
@@ -28,3 +30,4 @@ export default class Navigation extends Component {
       )
     }
 }
+export default withRouter(Navigation);

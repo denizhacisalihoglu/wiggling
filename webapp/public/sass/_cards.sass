@@ -1,0 +1,55 @@
+.event-card
+  flex-direction: row
+  align-items: start
+  font-family: "montserrat", sans-serif
+  margin-bottom: 20px
+  .card-img-top
+    float: left
+    display: block
+    margin: 1.25rem
+    background-color: #f7f7f7
+    width: 90px
+    height: 90px
+  .card-body
+    width: calc(100% - 90px - 1.25rem*2) !important
+    float: right
+    .event-name
+      color: #50698B
+      margin-bottom: 0
+      font-weight: 600
+      font-size: 18px
+    .organizer
+      color: #50698B
+      font-weight: 400
+      margin-bottom: 0
+      font-weight: 400
+      font-size: 14px
+    .datetime
+      color: #50698B
+      font-weight: 400
+      font-size: 14px
+    .attendies
+      .profiles
+        display: flex
+        align-item: center
+        .profile
+          width: 36px
+          height: 36px
+          display: block
+          background-color: #f7f7f7
+          text-align: center
+          overflow: hidden
+          margin-right: 8px
+          display: flex
+          align-items: center
+          img
+            width: 100%
+          .count
+            color: #B0B7C3
+            font-weight: 600
+            width: 100%
+            font-size: 14px
+      .attending
+        color: #9AA8B9
+        font-size: 12px
+        font-weight: 500
