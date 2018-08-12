@@ -21,3 +21,4 @@ yarn-debug.log*
 yarn-error.log*
 
 .ds_store
+.sass-cache
