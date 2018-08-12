@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import fetch from 'unfetch';
 import EventCard from '../../components/event_card';
+import ProgressBar from '../../components/progress_bar';
 
 export default class Events extends Component {  
   constructor(props) {
@@ -26,7 +27,7 @@ export default class Events extends Component {
     render() {
       const { events, isLoading } = this.state;
       if (isLoading) {
-        return <p>Loading...</p>;
+        return <ProgressBar />;
       }
       return (
         <main role="main" className="container">
