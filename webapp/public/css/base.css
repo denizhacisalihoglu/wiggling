@@ -33,7 +33,7 @@ body.home:after { width: 30%; height: 100vh; background: #291755; display: block
 .event-card { flex-direction: row; align-items: start; font-family: "montserrat", sans-serif; margin-bottom: 20px; }
 .event-card .card-img-top { float: left; display: block; margin: 1.25rem; background-color: #f7f7f7; width: 90px; height: 90px; }
 .event-card .card-body { width: calc(100% - 90px - 1.25rem*2) !important; float: right; }
-.event-card .card-body .event-name { color: #50698B; margin-bottom: 0; font-weight: 600; font-size: 18px; }
+.event-card .card-body .event-name { color: #50698B; text-transform: capitalize; margin-bottom: 0; font-weight: 600; font-size: 18px; }
 .event-card .card-body .organizer { color: #50698B; font-weight: 400; margin-bottom: 0; font-weight: 400; font-size: 14px; }
 .event-card .card-body .datetime { color: #50698B; font-weight: 400; font-size: 14px; }
 .event-card .card-body .attendies .profiles { display: flex; align-item: center; }
